@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.112.5">
+  <title>Porfolio|Tshivhula Phumudzo Given</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="cover.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="banner-wrap vh-100 vw-100 text-white align-items-center justify-content-center d-flex">
+    <div class="overlay"></div>
+    <header class="px-4 p-3 text-white fixed-top scrolling">
+      <div>
+        <h3 class="float-md-start text-center">My Portfolio</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+          <a class="nav-link fw-bold py-1 px-0" href="#about-me">About Me</a>
+          <a class="nav-link fw-bold py-1 px-0" href="#projects">Projects</a>
+          <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="  text-center">
+      <h1 class="display-3">Phumudzo Given Tshivhula</h1>
+      <span id="element" class="lead"></span>
+
+      </p>
+    </main>
+
+  </div>
+  <section id="about-me">
+    <div class="container p-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="row p-3">
+            <div class="col-md-6 col-sm-12">
+              <div class="row">
+                <div class="col-md-5 text-center text-md-start">
+                  <img
+                    src="https://media.licdn.com/dms/image/D4D03AQE-vdF7EdGbig/profile-displayphoto-shrink_200_200/0/1686598350850?e=1692835200&v=beta&t=PXtbt6glkoSSoRLpqSbFMwTLPyZd_gfUD7eBWsn2PDE"
+                    alt="..." class="rounded-circle">
+                </div>
+                <div class="col-md-7  mt-3 ps-2  fs-6">
+                  <p class="text-sm-start "><strong>Name:</strong>Phumudzo Given Tshivhula.</p>
+                  <p><strong>Profile:</strong>Full Stack Web developer Student.</p>
+                  <p><strong>Email:</strong>Tshivhulas.p3@gmail.com</p>
+                  <p><strong>Phone Number:</strong>076 770 7180.</p>
+                  <p><strong>Skills:</strong>
+                    <span class="badge text-bg-dark">HTML</span>
+                    <span class="badge text-bg-dark">CSS</span>
+                    <span class="badge text-bg-dark">Git</span>
+                    <span class="badge text-bg-dark">Firebase</span>
+                    <span class="badge text-bg-dark">PHP</span>
+                    <span class="badge text-bg-dark">mySql</span>
+                    <span class="badge text-bg-dark">Javascript</span>
+                    <span class="badge text-bg-dark">OOP</span>
+                    <span class="badge text-bg-dark">ReactJS</span>
+                    <span class="badge text-bg-dark">NodeJS</span>
+                    <span class="badge text-bg-dark">MongoDB</span>
+                    <span class="badge text-bg-dark">express</span>
+                    <span class="badge text-bg-dark">Vb.net</span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-md-6 mt-3">
+              <h1 class="text-center text-md-start"><mark>About</mark>
+              </h1>
+
+              <p class="lead fs-6">As a field technician with experience, and a brand ambassador , I have developed
+                skills in technical support, troubleshooting, hardware installation, and wireless networking. With a
+                focus on improving customer service, I have successfully resolved technical issues and contributed to
+                the internet connectivity in Vhembe District .
+                As a brand ambassador, I have facilitated Work Base Exposure for IT students at Vhembe TVET college,
+                formed partnerships with colleges such Vhembe TVET college,Capricorn TVET college,Thasululo FET college
+                , and increased brand awareness through event marketing, demonstrations, sales, and social media
+                promotion.
+                I hold a diploma in information technology, I am eager to leverage my skills and experience to drive
+                success for my future employer.
+                Currently enrolled for a full stack web developer course at ZAIO coding school.</p>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <h1 class="text-center"><strong>Projects</strong></h1>
+      <div class="row">
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/pexels-freestocksorg-987586.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Netflix landing page</h5>
+              <p class="card-text">HTML and CSS</p>
+              <a href="https://movie-streaming-clone-zaio.netlify.app/" target="_blank" class="btn btn-primary">View
+                Webisite</a>
+              <a href="https://github.com/Phumudzo3/zaio-neflix-landing-page-clone" class="btn btn-outline-dark"><i
+                  class="bi bi-code"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/daycare.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kiddies Planet Daycare</h5>
+              <p class="card-text">Reactjs</p>
+              <a href="https://kiddiesplanetdaycare.netlify.app/" target="_blank" class="btn btn-primary">View
+                Website</a>
+              <a href="" target="_blank"
+                class="btn btn-outline-dark"><i class="bi bi-code"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/soundday.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">balep-holdings-Entertainment</h5>
+              <p class="card-text">Reactjs</p>
+              <a href="https://balephoildingsentertainment.netlify.app/" target="_blank" class="btn btn-primary">View
+                Website</a>
+              <a href="" target="_blank"
+                class="btn btn-outline-dark"><i class="bi bi-code"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/pexels-greenwish-13240227.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Twitter landing page</h5>
+              <p class="card-text"> HTML and CSS</p>
+              <a href="https://social-messanger-clone-web-dev.netlify.app/" target="_blank" class="btn btn-primary">View
+                Website</a>
+              <a href="https://github.com/Phumudzo3/twitter_landing_page_clone" target="_blank"
+                class="btn btn-outline-dark"><i class="bi bi-code"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/pexels-pixabay-258083.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tesla landing page</h5>
+              <p class="card-text">HTML and CSS</p>
+              <a href="https://tesla-web-clone-zaio.netlify.app/" target="_blank" class="btn btn-primary">View
+                Website</a>
+              <a href="https://github.com/Phumudzo3/twitter_landing_page_clone" target="_blank"
+                class="btn btn-outline-dark"><i class="bi bi-code"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="https://logowik.com/content/uploads/images/google-keep3316.jpg" height="235px"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Google keep clone</h5>
+              <p class="card-text">HTMl,CSS and Javascript</p>
+              <a href="https://notes-app-zaio-without-login.netlify.app/" target="_blank" class="btn btn-primary">View
+                Website</a>
+              <a href="https://github.com/Phumudzo3/google-keep-clone" target="_blank" class="btn btn-outline-dark"><i
+                  class="bi bi-code"></i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/youtube.jpg" class="card-img-top" height="235px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Youtube  clone</h5>
+              <p class="card-text"> HTML and CSS</p>
+              <a href="https://streaming-online-app-zaio.netlify.app/" target="_blank"
+                class="btn btn-primary">View Website</a>
+              <a href="https://github.com/Phumudzo3/apple-airpod-website-clone" target="_blank"
+                class="btn btn-outline-dark"><i class="bi bi-code"></i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="https://logowik.com/content/uploads/images/google-keep3316.jpg" height="235px"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Google keep clone using Reactjs</h5>
+              <p class="card-text">Reactjs</p>
+              <a href="https://notes-app-clone-zaio.netlify.app/" target="_blank"
+                class="btn btn-primary">View Website</a>
+              <a href="https://github.com/Phumudzo3/google-keep-using-reactjs" target="_blank"
+                class="btn btn-outline-dark"><i class="bi bi-code"></i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/insta.jpg" class="card-img-top"  height="235px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Instagram Clone</h5>
+              <p class="card-text">html,css,firebase and Javascript</p>
+              <a href="https://gleeful-marzipan-217145.netlify.app/" target="_blank" class="btn btn-primary">View
+                Website</a>
+              <a href="https://github.com/Phumudzo3/instagram-clone" target="_blank" class="btn btn-outline-dark"><i
+                  class="bi bi-code"></i></a>
+
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/commercial.jpg" class="card-img-top" height="235px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">E-commercial App</h5>
+              <p class="card-text">Reactjs</p>
+              <a href="https://ecommerce-shopping-dcec2.web.app/home" target="_blank" class="btn btn-primary">View Website</a>
+              <a href="https://github.com/Phumudzo3/unauwa-e-commercial-app-reactjs" target="_blank" class="btn btn-outline-dark"><i
+                  class="bi bi-code"></i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="https://images.pexels.com/photos/21856217/pexels-photo-21856217/free-photo-of-lounges-on-swimming-pool.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" height="235px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Airbnb clone</h5>
+              <p class="card-text">React-redux</p>
+              <a href="https://hotelbookingdemoweb.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
+              <a href="https://github.com/Phumudzo3/airbnb-demo" target="_blank" class="btn btn-outline-dark"><i
+                  class="bi bi-code"></i></a>
+
+            </div>
+          </div>
+        </div><div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1601972602288-3be527b4f18a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" height="235px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">food delivery app-Backend development with NodeJS</h5>
+              <p class="card-text">nodejs,typescript</p>
+              <a href="https://hotelbookingdemoweb.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
+              <a href="https://github.com/Phumudzo3/e-commerce-food-delivery-backend-dev" target="_blank" class="btn btn-outline-dark"><i
+                  class="bi bi-code"></i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="assets/tic-tac.jpg" class="card-img-top" height="235px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">tic-tac-toe-react</h5>
+              <p class="card-text">Reactjs</p>
+              <a href="https://tic-tac-toe-zaio.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
+              <a href="https://github.com/Phumudzo3/tic-tac-toe-react-course" target="_blank" class="btn btn-outline-dark"><i
+                  class="bi bi-code"></i></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container p-5">
+      <div class="card p-3 text-center">
+        <div class="card-body px-5">
+          <h1 class=""><strong>Let's Connect!</strong></h1>
+          <p class="lead">Would love to connet with fellow developers,employers looking for developers or looking for
+            web developent done</p>
+          <p class="fs-2">
+            <a class="fs-2" href="https://www.linkedin.com/in/phumudzo-given-tshivhula-88893713b/" target="_blank"><i
+                class="bi bi-linkedin m-2"></i></a>
+            <a class="fs-2" href="https://github.com/Phumudzo3" target="_blank"><i class="bi bi-github m-2"></i></a>
+            <a class="fs-2" href="mailto:tshivhulas.p3@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill m-2"></i></a>
+          </p>
+          <form action="email.php" method="post">
+            <div class="mb-3">
+
+              <input type="email" placeholder="Enter Email" id="email" class="form-control" id="exampleInputEmail1" required
+                aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+
+              <input type="text" id="name" placeholder="Enter Name" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="mb-3">
+
+              <input type="text" id="subject" placeholder="Enter Subject" class="form-control"
+                id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+
+              <textarea class="form-control" id="message" placeholder="Enter Message" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+  <footer class="text-bg-dark text-center text-white">
+    <div class="container p-3">
+      <p>Developed by Tshivhula Phumudzo Given using Bootstrap,for ZAIO Bootstrap Course </p>
+
+
+    </div>
+  </footer>
+  <script>window.addEventListener("scroll", () => {
+      const header = document.querySelector("header")
+      header.classList.toggle("scrolling", window.scrollY > 0)
+
+    })
+  </script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      // Waits 1000ms after typing "First"
+      strings: ['IT Graduate', 'Web developer', 'Field Technician', 'Brand Ambassador', 'Fullstack web developer Student'],
+      loop: true,
+      shuffle: true,
+
+      typeSpeed: 75,
+    });
+  </script>
+
+</body>
+
+</html>
